@@ -1,0 +1,29 @@
+(* Paste into the variable panel of program "main" using the </> code view *)
+VAR
+  HEATER AT %QX0.0 : BOOL;
+  ALARM AT %QX0.1 : BOOL;
+  LEVEL_ALARM AT %QX0.2 : BOOL;
+  HMI_START AT %QX0.3 : BOOL;
+  HMI_STOP AT %QX0.4 : BOOL;
+  HMI_RESET AT %QX0.5 : BOOL;
+  HMI_RUN AT %QX0.6 : BOOL;
+  TEMP_SIM AT %QW0 : INT := 200;
+  LEVEL_SIM AT %QW1 : INT := 800;
+  START_PB : BOOL;
+  STOP_PB : BOOL;
+  RESET_PB : BOOL;
+  RUN : BOOL := FALSE;
+  TEMP_C : REAL := 0.0;
+  LEVEL_PCT : REAL := 0.0;
+  SP : REAL := 60.0;
+  HYST : REAL := 3.0;
+  TEMP_LIMIT : REAL := 90.0;
+  LVL_CUTOFF : REAL := 25.0;
+  LVL_RESUME : REAL := 30.0;
+  T_LOW : BOOL := FALSE;
+  T_HIGH : BOOL := FALSE;
+  T_OVER : BOOL := FALSE;
+  LVL_LOW_RAW : BOOL := FALSE;
+  LVL_LOW : BOOL := FALSE;
+  LVL_TMR : TON;
+END_VAR

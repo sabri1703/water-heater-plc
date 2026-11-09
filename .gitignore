@@ -1,0 +1,10 @@
+# OpenPLC Editor build output
+build/
+*.log
+# Node-RED runtime data (may contain credentials)
+node-red/.config*
+node-red/flows_cred.json
+node_modules/
+# OS files
+.DS_Store
+Thumbs.db
